@@ -332,6 +332,7 @@ sap.ui.define(
 			    		// var localhost = "http://localhost:41958/api/Print/"+pid;
 			    		// that.localPrint(localhost);
 			    		// that.clearCache(); 
+			    		if (num !="x"){
 			    		num = num + 1;
 			    		if (num ===sum) {
 			    		that.setBusy( false );
@@ -341,8 +342,10 @@ sap.ui.define(
 						});
 			    		} else{
 			    			return num;
-			    		}
+			    		}}
 			    	}else{
+			    		if (num != 'x'){
+			    		num = "x";
 			    		that.setBusy( false ); 
 			    		var errMsg = data.Message;
 			    		that.clearCache();
@@ -350,6 +353,8 @@ sap.ui.define(
 						sap.m.MessageBox.error(messageText, {
 							title: "Error" //that._ResourceBundle.getText("errorBox")
 						});
+						return num;
+			    		}
 			    	}
 			    },
 			    error: function (xhr, status) {
