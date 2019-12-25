@@ -1,0 +1,13 @@
+<mvc:View controllerName="cie.delivery.controller.app" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+		  busy="{/appProperties/busy}" busyIndicatorDelay="0" xmlns="sap.m">
+	<!--<Shell id="shell">-->
+	<!--	<App id="app">-->
+	<!--		<pages>-->
+	<!--			<Page id="page" title="{i18n>title}">-->
+	<!--				<content></content>-->
+	<!--			</Page>-->
+	<!--		</pages>-->
+	<!--	</App>-->
+	<!--</Shell>-->
+	<App id="appNavContainer"/>
+</mvc:View>
